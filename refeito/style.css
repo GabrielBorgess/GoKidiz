@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+    .desktop{
+        display: initial;
+    }
+}
+
+/* header */
+
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+/* img{
+    height: 72px;
+    width: 52px; 
+} */
+
+header{
+    padding-left: 80px;
+    padding: 50px 67px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+header .phone-menu{
+    display: none;
+}
+
+header nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav.desktop{
+    text-align: right;
+}
+
+header nav a{
+    text-decoration: none;
+    padding-left: 50px;
+    color: #302B2C;
+}
+
+header nav a.purple{
+   color: #9266BE;
+}
+
+header nav li{
+    display: inline;
+}
+
+@media (max-width: 750px){
+    body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+     .desktop{
+        display: flex;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width:100vw;
+        height: 92vh;
+        background-color: #bec2ff;
+        justify-content: space-around;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+    .show-list{
+        transform: translateX(0);
+    }
+    header .phone-menu{
+        display: block;
+    }
+   
+    header nav a{
+        padding-left: 0px;
+        margin: 10px;
+        right: 0;
+    }
+    header nav li{
+        display: flex;
+        justify-content: space-around;
+        /* margin-left: 0;
+        opacity: 0; */
+    }
+    p{
+        text-align: right;
+    }
+}
+
+/* end header */
+
+/* sections */
+
+section{
+    height: 100vh;
+    /* border: 5px solid red; */
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
+}
+
+section.main-section{
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container{
+    grid-column: 1 / 2;
+    padding-top: 55px;
+    padding-left: 10vh;
+}
+
+img.main-image{
+    display: none;
+}
+
+img.phone-image{
+    display: none;
+}
+
+@media (min-width: 1600px){
+    img.main-image{
+        display: initial;
+        position: fixed;
+        width: 90%;
+        padding-top: 6vh;
+        padding-left: 50%;
+    }
+}
+
+@media (min-width: 1700px){
+    img.main-image{
+        display: initial;
+        max-width: 90%;
+        padding-top: 30px;
+    }
+}
+
+
+.container h1{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    text-align: left;
+    vertical-align: top;
+    color: #302B2C;
+}
+
+.container h1 a{
+    text-decoration: none;
+    color: #9266BE;
+}
+
+.description{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    max-width: 408px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: justify;
+    vertical-align: top;
+    color: #6C6C6C;
+}
+
+.form a{
+    color: #9266BE;
+    text-decoration-line: underline;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.install-app{
+    padding-top: 100px;
+}
+
+.install-app img{
+    max-width: 90%;
+}
+
+@media (max-width: 750px){
+    section.main-section{
+        width: 100%;
+        padding-top: 160px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        height: auto;
+    }
+    .container{
+        padding-top: 0px;
+        padding-left: 0px;
+      }
+     p.form{
+        text-align: center;
+        margin: 0px;
+    }
+    .container{
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+    .container h1{
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .description{
+        padding-top: 25px;
+        padding-bottom: 30px;
+        padding-right: 10%;
+        padding-left: 10%;
+        max-width: none;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .form a{
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .install-app{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .install-app img{
+        max-width: 25%;
+    }
+    img.phone-image{
+        display: initial;
+        position: relative;
+        width: 85%;
+        bottom: 0;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+    header.hidden{
+        transform: translateY(-200px);
+    }
+    section{
+        height: auto;
+    }
+    
+    section.main-section{
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+        margin: 0px;
+    }
+    .container{
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+    .container h1{
+        font-size: 3em;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .description{
+        padding-top: 25px;
+        padding-bottom: 30px;
+        padding-right: 20%;
+        padding-left: 20%;
+        max-width: none;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .form a{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .install-app{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .install-app img{
+        max-width: 25%;
+    }
+    img.phone-image{
+        display: initial;
+        position: relative;
+        width: 85%;
+        bottom: 0;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1599px){
+    header.hidden{
+        transform: translateY(-200px);
+    }
+    section{
+        height: auto;
+    }
+    section.main-section{
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+        margin: 0px;
+    }
+    .container{
+      padding-top: 0px;
+      padding-left: 0px;
+    }
+    .container h1{
+        font-size: 3.5em;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .description{
+        padding-top: 25px;
+        padding-bottom: 30px;
+        padding-right: 20%;
+        padding-left: 20%;
+        max-width: none;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .form a{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .install-app{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .install-app img{
+        max-width: 25%;
+    }
+    img.phone-image{
+        display: initial;
+        position: relative;
+        width: 60%;
+        bottom: 0;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1600px){
+    .container h1{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        text-align: left;
+        vertical-align: top;
+        color: #302B2C;
+    }
+    .description{
+        padding-top: 25px;
+        padding-bottom: 40px;
+        max-width: 408px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: justify;
+        vertical-align: top;
+        color: #6C6C6C;
+    }
+    .install-app{
+        padding-top: 138px;
+    }
+    
+    .install-app img{
+        max-width: 90%;
+    }
+}
+
+section.education-section{
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+img.educationimg{
+    max-width: 90%;
+}
+
+
+
+/* main sections */
