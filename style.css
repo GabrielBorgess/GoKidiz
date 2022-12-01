@@ -689,3 +689,141 @@ section#app-features div.features-content p{
     text-align: left;
     padding-bottom: 38px;
 }
+
+
+
+@media (min-width: 1200px) and (max-width:1610px){
+    section#app-features div.features-content h1{
+        font-size: 55px;
+        padding-bottom: 55px;
+    }
+    section#app-features div.features-content h3{
+        font-size: 18px;
+    }
+    section#app-features div.features-content p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media all and (min-width: 920px) and (max-width:1199px){
+    section#app-features{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 100vh;
+    }
+    section#app-features div.features-content{
+        max-width: 641px;
+        padding-right: 60px;
+    }
+    section#app-features div.holder img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    section#app-features div.features-content h1{
+        font-size: 50px;
+        padding-bottom: 35px;
+    }
+    section#app-features div.features-content h3{
+        font-size: 18px;
+        line-height: 19px;
+        padding-bottom: 23px;
+    }
+    section#app-features div.features-content p{
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 35px;
+    }
+    section#app-features div.features-content img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 919px) {
+    section#app-features{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    section#app-features div.holder img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    section#app-features div.holder{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    section#app-features div.features-content{
+        padding-right: 30px;
+    }
+    section#app-features div.features-content h1{
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    section#app-features div.features-content h3{
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 26px;
+    }
+    section#app-features div.features-content p{
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 35px;
+    }
+    section#app-features div.features-content img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    section#app-features{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    section#app-features div.holder img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    section#app-features div.holder{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    section#app-features div.features-content{
+        padding-right: 30px;
+    }
+    section#app-features div.features-content h1{
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    section#app-features div.features-content h3{
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 26px;
+    }
+    section#app-features div.features-content p{
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 35px;
+    }
+    section#app-features div.features-content img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+}
